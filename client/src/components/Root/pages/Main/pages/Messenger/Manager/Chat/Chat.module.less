@@ -1,0 +1,38 @@
+.Chat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: #ffffff;
+
+  &.desktop {
+    width: calc(100% - 200px) !important;
+    height: 100% !important;
+
+    .body {
+      height: calc(100vh - 48px - 48px);
+    }
+  }
+
+  &.mobile {
+    width: 100vw !important;
+    height: 100vh !important;
+
+    .body {
+      height: calc(100vh - 48px);
+    }
+  }
+
+  .body {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: calc(100vh - 48px - 48px);
+
+    background-color: #ffffff;
+  }
+}

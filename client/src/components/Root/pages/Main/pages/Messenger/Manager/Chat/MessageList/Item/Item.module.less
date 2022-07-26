@@ -1,0 +1,85 @@
+.ChatMessageListItem {
+  width: 100%;
+  max-width: 100%;
+
+  margin: 0 !important;
+
+  transition: background-color 0.3s;
+
+  &.unread {
+    background-color: rgba(174, 183, 194, 0.12);
+  }
+
+  .parent {
+    width: 100%;
+    min-height: 40px;
+
+    padding: 6px 16px;
+
+    .presentation {
+      width: 32px;
+
+      margin: 2px 16px 0 0;
+
+      .avatar {
+        width: inherit;
+        height: 40px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      max-width: calc(100% - 48px);
+
+      .title {
+        .name {
+          height: 20px;
+
+          line-height: 20px;
+          font-size: 12px;
+          color: #00000073;
+
+          .paragraph {
+            color: inherit;
+
+            margin: 0;
+          }
+        }
+
+        .date {
+          line-height: 20px;
+          font-size: 10px;
+          color: #00000073;
+
+          margin: 0 0 0 8px;
+        }
+      }
+
+      .message {
+        min-height: 20px;
+
+        line-height: 20px;
+        font-size: 14px;
+        color: #00000073;
+
+        .paragraph {
+          color: inherit;
+
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .children {
+    width: 100%;
+    max-width: calc(100% - 48px);
+    min-height: 20px;
+
+    padding: 0 16px 12px 16px;
+    margin: 0 0 0 48px;
+
+    line-height: 20px;
+    font-size: 14px;
+  }
+}
